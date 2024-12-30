@@ -1,3 +1,7 @@
+# $TenantID = ""
+# $ClientID = ""
+# $ClientSecret = ""
+
 # Function to invoke the Azure Management API
 function Invoke-AzureManagementApi {
     param (
