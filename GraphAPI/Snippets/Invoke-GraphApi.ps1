@@ -1,7 +1,6 @@
 # $TenantID = ""
 # $ClientID = ""
 # $ClientSecret = ""
-# $GroupID = ""
 
 # Function to invoke the Graph API
 function Invoke-GraphApi {
