@@ -27,10 +27,13 @@ function Invoke-GraphApi {
     $url = "$baseUrl$ApiEndpoint"
 
     # Execute the HTTP call based on the specified method
-    $response = Invoke-RestMethod -Uri $url -Headers $authorization -Method $Method -Body $Body -ContentType $ContentType
+    $response = Invoke-RestMethod -Uri $url -Headers $authorization -Method $Method -Body $Body -ContentType $ContentType -ResponseHeadersVariable Headers
 
     # Return the response
     $response
+
+    # Return the headers as part of the response
+    $headers
 }
 
 # Build the authorization header
