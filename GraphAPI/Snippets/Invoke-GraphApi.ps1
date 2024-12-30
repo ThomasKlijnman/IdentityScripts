@@ -59,3 +59,6 @@ $GraphAPIAccessToken = $GraphAPItokenResponse.access_token
     }
 
     $AllTransitiveMem = Invoke-GraphApi @GETGroupListTransitiveMemParams
+
+# Example of reporting ClientRequestID with DateTime of response headers for use in response / output
+Write-host "[$($AllTransitiveMem.'request-id')][$($AllTransitiveMem.Date)] GET all Transitive Members..%"
